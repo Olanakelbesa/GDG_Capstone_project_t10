@@ -12,26 +12,26 @@ function NavBar() {
     <div>
       <div className="flex flex-row justify-between items-center p-4 bg-gray-950/50 relative font-['montserrat'] ">
         <img
-          className="w-30 invert md:w-40 lg:w-60"
+          className="w-30 invert md:w-50 lg:w-60"
           src={logo}
           alt="logo of the company"
         />
-        <p className="text-sm font-bold text-gray-100 hidden lg:inline">Home</p>
+        <p className="text-xs font-bold text-gray-100 hidden lg:inline">Home</p>
         <div className=" lg:flex lg:flex-row lg:gap-16 hidden">
           <button className=" flex flex-row items-center gap-1">
-            <p className=" text-gray-100 text-sm">Package</p>
+            <p className=" text-gray-100 text-xs">Package</p>
             <IoIosArrowDown className="text-white" />
           </button>
           <button className="flex flex-row items-center gap-1">
-            <p className=" text-sm  text-gray-100">Destination</p>
+            <p className=" text-xs  text-gray-100">Destination</p>
             <IoIosArrowDown className="text-white" />
           </button>
           <button className="flex flex-row items-center gap-1">
-            <p className=" text-sm  text-gray-100">Blog</p>
+            <p className=" text-xs  text-gray-100">Blog</p>
             <IoIosArrowDown className="text-white" />
           </button>
           <button className="flex flex-row items-center gap-1">
-            <p className=" text-sm  text-gray-100">Contact</p>
+            <p className=" text-xs  text-gray-100">Contact</p>
             <IoIosArrowDown className="text-white" />
           </button>
           <IoIosSearch className="size-5 text-gray-100" />
