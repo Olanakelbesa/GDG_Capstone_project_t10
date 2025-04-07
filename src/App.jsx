@@ -1,5 +1,10 @@
+import Front from "./components/Front";
 function App() {
-  return <div>Hello groupmates</div>;
+  return (
+    <div>
+      <Front />
+    </div>
+  );
 }
 
 export default App;
