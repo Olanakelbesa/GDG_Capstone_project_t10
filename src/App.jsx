@@ -1,5 +1,9 @@
+import Contact from './Contact.jsx'
+
 function App() {
-  return <div>Hello groupmates</div>;
+  return <div>
+    <Contact/>
+  </div>;
 }
 
 export default App;
