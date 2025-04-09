@@ -4,6 +4,7 @@ import Destinations from '../components/Destinations';
 import Articles from '../components/Articles';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
+import ".styles/package.css"
 
 
 export default function Package() {
