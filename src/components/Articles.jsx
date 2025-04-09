@@ -7,7 +7,7 @@ export default function Articles({ data }) {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {data.map((item) => (
-          <div key={item.id} className="bg-white shadow rounded-lg overflow-hidden">
+          <div key={item.id} className="bg-white shadow rounded-lg overflow-hidden autoShow">
             {item.image && (
               <img
                 src={item.image}

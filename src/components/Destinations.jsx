@@ -24,7 +24,7 @@ export default function Destinations({ data, page, perPage, onPageChange }) {
         {displayedItems.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform duration-200 hover:scale-[1.01]"
+            className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform duration-200 hover:scale-[1.01]  autoShow"
           >
             <img
               src={`images/${item.image}.png`}

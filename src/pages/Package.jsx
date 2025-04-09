@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { getDestinations, dummyArticles } from '../services/apiClient';
 import Destinations from '../components/Destinations';
 import Articles from '../components/Articles';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+
 
 export default function Package() {
   const [destinations, setDestinations] = useState([]);
@@ -19,6 +22,7 @@ export default function Package() {
 
   return (
     <div className="bg-white p-8 space-y-12">
+      <NavBar/>
       <Destinations 
         data={destinations}
         page={currentPage}
@@ -26,9 +30,10 @@ export default function Package() {
         onPageChange={setCurrentPage}
       />
 
-      <img src="images/plane.png" alt="plane" />
+      <img src="images/plane.png" alt="plane" className=' autoShow'/>
       
       <Articles data={articles} />
+      <Footer/>
     </div>
   );
 }
