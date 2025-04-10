@@ -1,10 +1,8 @@
-import Front from "./components/Front";
-import Singleblog from "./components/Singleblog";
+import Singleblog from "./pages/Singleblog";
 function App() {
   return (
     <div>
       <Singleblog/>
-      <Front />
     </div>
   );
 }
