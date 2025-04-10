@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
-import { getDestinations, dummyArticles } from '../services/apiClient';
-import Destinations from '../components/Destinations';
-import Articles from '../components/Articles';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
-import "../styles/package.css"
-
+import { useEffect, useState } from "react";
+import { getDestinations, dummyArticles } from "../services/apiClient";
+import Destinations from "../components/Destinations";
+import Articles from "../components/Articles";
+import Footer from "../components/Footer";
+import Header from "../components/PackageHeader";
+import "../styles/package.css";
 
 export default function Package() {
   const [destinations, setDestinations] = useState([]);
@@ -22,19 +21,21 @@ export default function Package() {
   }, []);
 
   return (
-    <div className="bg-white p-8 space-y-12">
-      <NavBar/>
-      <Destinations 
-        data={destinations}
-        page={currentPage}
-        perPage={itemsPerPage}
-        onPageChange={setCurrentPage}
-      />
+    <>
+      <Header />
+      <div className="bg-white p-8 space-y-12">
+        <Destinations
+          data={destinations}
+          page={currentPage}
+          perPage={itemsPerPage}
+          onPageChange={setCurrentPage}
+        />
 
-      <img src="images/plane.png" alt="plane" className=' autoShow'/>
-      
-      <Articles data={articles} />
-      <Footer/>
-    </div>
+        <img src="images/plane.png" alt="plane" className=" autoShow" />
+
+        <Articles data={articles} />
+        <Footer />
+      </div>
+    </>
   );
 }
