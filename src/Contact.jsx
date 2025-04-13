@@ -30,12 +30,12 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="py-50 px-15 font-poppins bg-white text-black">
-        <div className="grid grid-cols-1 md:grid-cols-[600px_500px] gap-8 justify-between font-light text-7xl">
-          <div className="space-y-6 shadow-2xl w-[580] h-[668] py-20 px-10 text-lg" >
+      <div className="py-35 px-15 font-poppins bg-white text-black">
+        <div className="grid grid-cols-1 md:grid-cols-[580px_1fr] gap-8 justify-between font-light text-7xl">
+          <div className="space-y-4 shadow-2xl  py-14 px-10 text-lg h-fit" >
            
-            <form action="#" method="POST" className="space-y-6">
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6"> */}
+            <form action="#" method="POST" className="space-y-6 ">
+            
                 <div>
                   <input
                     type="text"
@@ -45,6 +45,7 @@ const Contact = () => {
                     autoComplete="name"
                     required
                     className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm
+                    h-[66px]
                    "
                   />
                 </div>
@@ -56,7 +57,8 @@ const Contact = () => {
                     placeholder="Your Email"
                     autoComplete="email"
                     required
-                    className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm 
+                    h-[66px]"
                   />
                 </div>
               
@@ -67,7 +69,8 @@ const Contact = () => {
                   id="subject"
                   placeholder="Subject"
                   required
-                  className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm 
+                    h-[66px]"
                 />
               </div>
               <div>
@@ -77,13 +80,13 @@ const Contact = () => {
                   placeholder="Your Message"
                   rows="4"
                   required
-                  className="mt-1 block w-full px-4 h-40 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="mt-1 block w-full  plpx-4 h-40 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-xl placeholder-[18px]"
                 ></textarea>
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-black w-498 h-16 text-white py-3 rounded-full text-sm font-medium hover:bg-gray-700 text-4xl font-semibold"
+                  className="bg-black w-full h-16 text-white py-3 rounded-full text-3xl font-medium hover:bg-gray-700 "
                 >
                   Send Message
                 </button>
@@ -91,69 +94,69 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="space-y-6  w-[676] h-[612] py-20 px-10 text-lg">
+          <div className="space-y-4  px-10 text-lg">
 {/* contact detail description text*/}
             <div>
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 m-8 text-center">Get in Touch</h2>
+          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 m-8 text-left p-0">Get In Touch</h2>
           <p className=" ">Welcome Our beloved customer, this is our our contact information section You can access us in your choice, We are please to have you!</p>
           </div>
 
 {/*contact detail information sections*/}
-            <div className="grid grid-cols-1 gap-y-1 md:grid-cols-2 space-y-14 lg:w-[676px] lg:h-[612px] lg:gap-x-8 lg:gap-y-0">
+            <div className="grid grid-cols-1 gap-y-1 md:grid-cols-2 space-y-4  lg:h-[612px] lg:gap-x-8">
               {/* a1 card */}
                 <div className="space-y-4">
                   <p className="text-gray-700">Abebe</p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Phone:</span> (123) 456-7890
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Email:</span> contact@company.com
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Location:</span> 123 Main Street,
-                    City, Country
-                  </p>
+                  <div className="text-lg text-gray-700 flex gap-2">
+                    <img src={phoneIcon} alt="phone" className="w-4 h-6"/> (123) 456-7890
+                    </div>
+                    <div className="text-lg text-gray-7 flex gap-2">
+                  <img src={emailIcon} alt="location" className="w-4 h-6"/><p>conact@company.com</p>
+                  </div>
+                  <div className="text-lg text-gray-7 flex gap-2">
+                  <img src={locationIcon} alt="location" className="w-4 h-6"/><p>123 Main Street,
+                  City, Country</p>
+                  </div>
                 </div>
     
                 {/* a2 card */}
                 <div className="space-y-4">
                   <p className="text-gray-700">Bekele</p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Phone:</span> (123) 456-7890
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Email:</span> contact@company.com
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Location:</span> 123 Main Street,
-                    City, Country
-                  </p>
+                  <div className="text-lg text-gray-700 flex gap-2">
+                    <img src={phoneIcon} alt="phone" className="w-4 h-6"/> (123) 456-7890
+                    </div>
+                    <div className="text-lg text-gray-7 flex gap-2">
+                  <img src={emailIcon} alt="location" className="w-4 h-6"/><p>conact@company.com</p>
+                  </div>
+                  <div className="text-lg text-gray-7 flex gap-2">
+                  <img src={locationIcon} alt="location" className="w-4 h-6"/><p>123 Main Street,
+                  City, Country</p>
+                  </div>
                 </div>
                 {/* a3 card */}
                 <div className="space-y-4">
                   <p className="text-gray-700">Chala</p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Phone:</span> (123) 456-7890
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    <span className="font-semibold">Email:</span> contact@company.com
-                  </p>
+                  <div className="text-lg text-gray-700 flex gap-2">
+                    <img src={phoneIcon} alt="phone" className="w-4 h-6"/> (123) 456-7890
+                    </div>
+                    <div className="text-lg text-gray-7 flex gap-2">
+                  <img src={emailIcon} alt="location" className="w-4 h-6"/><p>conact@company.com</p>
+                  </div>
                   <div className="text-lg text-gray-7 flex gap-2">
-                  <img src={locationIcon} alt="location" className="w-5"/><p>123 Main Street,
+                  <img src={locationIcon} alt="location" className="w-4 h-6"/><p>123 Main Street,
                   City, Country</p>
                   </div>
                 </div>
                 {/* a4 card */}
                 <div className="space-y-4">
                   <p className="text-gray-700">Deriba</p>
-                  <p className="text-lg text-gray-700">
-                    <img src={phoneIcon} alt="phone"/> (123) 456-7890
-                    </p>
+                  <div className="text-lg text-gray-700 flex gap-2">
+                    <img src={phoneIcon} alt="phone" className="w-4 h-6"/> (123) 456-7890
+                    </div>
                     <div className="text-lg text-gray-7 flex gap-2">
-                  <img src={emailIcon} alt="location" className="w-5"/><p>conact@company.com</p>
+                  <img src={emailIcon} alt="location" className="w-4 h-6"/><p>conact@company.com</p>
                   </div>
                   <div className="text-lg text-gray-7 flex gap-2">
-                  <img src={locationIcon} alt="location" className="w-5"/><p>123 Main Street,
+                  <img src={locationIcon} alt="location" className="w-4 h-6"/><p>123 Main Street,
                   City, Country</p>
                   </div>
                 </div>
