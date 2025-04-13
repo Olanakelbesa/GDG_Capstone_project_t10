@@ -45,7 +45,7 @@ const Contact = () => {
                     autoComplete="name"
                     required
                     className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm
-                    h-[66px]
+                    h-[66px] placeholder:text-lg 
                    "
                   />
                 </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                     autoComplete="email"
                     required
                     className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm 
-                    h-[66px]"
+                    h-[66px] placeholder:text-lg "
                   />
                 </div>
               
@@ -70,7 +70,7 @@ const Contact = () => {
                   placeholder="Subject"
                   required
                   className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm 
-                    h-[66px]"
+                    h-[66px] placeholder:text-lg "
                 />
               </div>
               <div>
@@ -80,7 +80,7 @@ const Contact = () => {
                   placeholder="Your Message"
                   rows="4"
                   required
-                  className="mt-1 block w-full  plpx-4 h-40 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-xl placeholder-[18px]"
+                  className="mt-1 block w-full  plpx-4 h-40 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-xl placeholder-[18px] placeholder:text-lg "
                 ></textarea>
               </div>
               <div>
