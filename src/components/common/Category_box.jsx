@@ -2,9 +2,9 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function CategoryBox() {
   const scrollToStory = () => {
-    const formSection = document.getElementById("stories");
-    if (formSection) {
-      formSection.scrollIntoView({ behavior: "smooth" });
+    const storysection = document.getElementById("stories");
+    if (storysection) {
+      storysection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
