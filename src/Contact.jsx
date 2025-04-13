@@ -1,4 +1,5 @@
 import React from "react";
+import contactImage from "./assets/contact-image.png"; 
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
       <div className="relative h-96 md:h-[40rem] lg:h-[50rem]">
         <div className="flex justify-center items-center h-full bg-no-repeat bg-cover bg-center">
           <img
-            src="assets/contact-image.png"
+            src={contactImage}
             alt="contact image"
             className="w-full h-full object-cover"
           />
