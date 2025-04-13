@@ -1,4 +1,4 @@
-import Form_gdg from "../components/common/Form_gdg";
+import LeaveComent_Form from "../components/common/LeaveComent_Form";
 import Category_box from "../components/common/Category_box";
 import Black_box from "../components/common/Black_box";
 import Recent_posts from "../components/common/Recent_posts";
@@ -71,7 +71,7 @@ function Singleblog() {
       </div>
       </div>
       
-      <div className="flex flex-col lg:flex-row h-full p-4 rounded-lg w-full">
+      <div id="stories"  className="flex flex-col lg:flex-row h-full p-4 rounded-lg w-full">
     
         <div className="flex-initial w-full lg:w-2/3 h-full bg-white p-4 rounded-lg">
           <div className="">
@@ -98,9 +98,9 @@ function Singleblog() {
             </div>
             <div className="flex items-center">
               <p className="mr-3">Share This:</p>
-              <FaFacebook className="m-3 text-3xl" />
-              <AiFillTwitterCircle className="m-3 text-3xl" />
-              <FaLinkedin className="m-3 text-3xl" />
+              <a href="https://www.facebook.com/"><FaFacebook className="m-3 text-3xl" /></a>
+              <a href="https://x.com/?lang=en"><AiFillTwitterCircle className="m-3 text-3xl" /></a>
+              <a href="https://www.linkedin.com/"><FaLinkedin className="m-3 text-3xl" /></a>
             </div>
           </div>
           <hr className="opacity-15"/>
@@ -122,7 +122,7 @@ function Singleblog() {
 
       
       <div className="w-full lg:w-1/2 mt-10 px-4">
-        <Form_gdg />
+        <LeaveComent_Form />
       </div>
       <Front />
     </>
