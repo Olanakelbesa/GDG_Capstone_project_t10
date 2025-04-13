@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
 
 {/*contact detail information sections*/}
-            <div className="grid grid-cols-1 gap-y-1 md:grid-cols-2 space-y-4  lg:h-[612px] lg:gap-x-8">
+            <div className="grid grid-cols-1 gap-y-1 md:grid-cols-2 space-y-4  lg:h-[500px] lg:gap-x-8">
               {/* a1 card */}
                 <div className="space-y-4">
                   <p className="text-gray-700">Abebe</p>
