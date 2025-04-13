@@ -4,6 +4,7 @@ import phoneIcon from "./assets/contact-icons/phone.png";
 import emailIcon from "./assets/contact-icons/email.png";
 import locationIcon from "./assets/contact-icons/location.png";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const Contact = () => {
   return (
@@ -161,9 +162,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <footer className="bg-gray-800 text-white py-4 mt-8 text-center">
-        <div className="text-sm">© 2025 My Awesome Website. All Rights Reserved.</div>
-      </footer>
+    <Footer/>
     </div>
   );
 };
