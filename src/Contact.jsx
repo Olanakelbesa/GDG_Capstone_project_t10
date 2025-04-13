@@ -1,12 +1,12 @@
 import React from "react";
-import contactImage from "./assets/contact-image.png"; 
+import contactImage from "./assets/contact-image.png";
 
 const Contact = () => {
   return (
     <div className="bg-white text-black flex flex-col">
       {/* Header - Optional */}
       {/* <Header /> */}
-      <div className="relative h-96 md:h-[40rem] lg:h-[50rem]">
+      <div className="relative  md:h-[40rem] lg:h-[50rem]">
         <div className="flex justify-center items-center h-full bg-no-repeat bg-cover bg-center">
           <img
             src={contactImage}
@@ -14,9 +14,11 @@ const Contact = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        {/* Centered Text */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50"
+        >
           <h4 className="text-4xl md:text-6xl font-bold text-white">Contact</h4>
-          <a href="#" className="ml-8 text-white font-bold">
+          <a href="#" className="mt-4 text-white font-bold text-lg underline">
             Home
           </a>
         </div>
