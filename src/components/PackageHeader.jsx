@@ -13,7 +13,7 @@ const Header = () => {
       <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       {/* Navbar (on top) */}
-      <div className="relative z-20">
+      <div className="relative z-1000">
         <NavBar />
       </div>
 

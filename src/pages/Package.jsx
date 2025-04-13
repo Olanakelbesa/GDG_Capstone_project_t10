@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getDestinations, dummyArticles } from "../services/apiClient";
-import Destinations from "../components/Destinations";
+import Destinations from "../components/PackageCard";
 import Articles from "../components/Articles";
 import Footer from "../components/Footer";
 import Header from "../components/PackageHeader";
