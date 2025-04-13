@@ -1,12 +1,67 @@
-# React + Vite
+# 🌍 Rebel Rover Travel Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern travel booking platform built with React, Tailwind CSS, and React Router — inspired by the Rebel Rover Figma design.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View Live Site](https://your-deployment-link.com)
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Homepage Screenshot](link-to-your-screenshot-if-any)
+
+---
+
+## 📌 Features
+
+- 🌟 Beautiful hero section & testimonials
+- 🗺️ Searchable destinations grid with filters
+- 📅 Multi-step booking form with date picker
+- 👤 User profile with booking history
+- 🔄 Full CRUD with MockAPI.io
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **React Router DOM**
+- **Tailwind CSS**
+- **MockAPI.io** (for backend simulation)
+- **Vite** (for fast development)
+
+---
+
+## 🔗 API
+
+Base URL:  
+`https://67eadc5834bcedd95f64c9f3.mockapi.io/RebelRover/Destinations`
+
+Supports:
+
+- `GET` - Fetch all destinations
+- `POST` - Add a new destination
+- `PUT` - Update destination details
+- `DELETE` - Remove a destination
+
+Fields:  
+`id`, `name`, `country`, `price`, `image`, `description`
+
+---
+
+## 🧪 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/Olanakelbesa/GDG_Capstone_project_t10.git
+
+# Navigate into the project
+cd GDG_Capstone_project_t10
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+
+```
