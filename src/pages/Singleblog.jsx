@@ -74,13 +74,14 @@ function Singleblog() {
       <div id="stories"  className="flex flex-col lg:flex-row h-full p-4 rounded-lg w-full">
     
         <div className="flex-initial w-full lg:w-2/3 h-full bg-white p-4 rounded-lg">
-          <div className="">
+          <div className="my-14">
             <img src="src/assets/unsplash_1XLyzi17Z2M.png" alt="Beautiful lady in the center of the street" className="w-full rounded" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
           </div>
           <div className="my-14">
+            <h1 className="text-left font-medium mt-3 mb-3 text-4xl">Rice Terraces, Tegallalang</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
