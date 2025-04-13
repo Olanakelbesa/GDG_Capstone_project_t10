@@ -1,4 +1,8 @@
 import suitcaseImage from "../assets/suite-case.jpg";
+import { Link } from "react-router-dom";
+
+const linkClasses =
+"text-xs text-gray-100 hover:text-white hover:underline transition cursor-pointer";
 
 const Banner = () => {
   return (
