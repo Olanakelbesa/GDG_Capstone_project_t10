@@ -9,7 +9,7 @@ export default function Destinations({ data, page, perPage, onPageChange }) {
     <section className="py-10 px-4">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10">
         <div>
-          <h2 className="text-3xl font-bold mb-2">Popular Destination</h2>
+          <h2 className="text-3xl font-bold mb-2" id="popular">Popular Destination</h2>
           <p className="text-sm text-gray-500 max-w-md">
             Discover the world's top travel spots, offering breathtaking
             views, rich culture, and unique adventures for every traveler.
