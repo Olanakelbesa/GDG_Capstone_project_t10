@@ -5,6 +5,7 @@ import Articles from "../components/Articles";
 import Footer from "../components/Footer";
 import Header from "../components/PackageHeader";
 import "../styles/package.css";
+import plane from "../assets/plane.png";
 
 export default function Package() {
   const [destinations, setDestinations] = useState([]);
@@ -31,7 +32,7 @@ export default function Package() {
           onPageChange={setCurrentPage}
         />
 
-        <img src="images/plane.png" alt="plane" className=" autoShow" />
+        <img src={plane} alt="plane" className=" autoShow" />
 
         <Articles data={articles} />
         <Footer />
