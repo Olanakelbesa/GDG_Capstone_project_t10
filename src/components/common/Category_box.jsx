@@ -1,24 +1,23 @@
 import { FaArrowRight } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function CategoryBox() {
+  const navigate = useNavigate();
+
   const scrollToStory = () => {
     const storysection = document.getElementById("stories");
     if (storysection) {
       storysection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const scrollToDestination = () => {
-    const destinationsection = document.getElementById("popular");
-    if (destinationsection) {
-      destinationsection.scrollIntoView({ behavior: "smooth" });
-    }
+
+  const goToPackage = () => {
+    navigate("/package");
   };
-  const scrollToTipsAndArticle = () => {
-    const articlesection = document.getElementById("article");
-    if (articlesection) {
-      articlesection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
+  const goToHome = () => {
+    navigate("/");
+  }
 
   return (
     <>
@@ -26,7 +25,7 @@ function CategoryBox() {
         <div className="rounded w-full shadow-lg mx-14 my-14 mr-0">
           <h3 className="text-left font-bold mt-3 mb-3 text-4xl">Categories</h3>
 
-          <div className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150">
+          <div className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150" onClick={goToHome}>
             <FaArrowRight className="m-5" />
             <p className="m-3">Travel</p>
           </div>
@@ -34,18 +33,26 @@ function CategoryBox() {
           <hr className="opacity-15" />
 
           <div
-            className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150 cursor-pointer" onClick={scrollToTipsAndArticle}>
+            className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150 cursor-pointer"
+            onClick={goToPackage}
+          >
             <FaArrowRight className="m-5" />
             <p className="m-3">Tips</p>
           </div>
 
           <hr className="opacity-15" />
-          <div className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150" onClick={scrollToStory}>
+          <div
+            className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150"
+            onClick={scrollToStory}
+          >
             <FaArrowRight className="m-5" />
             <p>Stories</p>
           </div>
           <hr className="opacity-15" />
-          <div className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150" onClick={scrollToDestination}>
+          <div
+            className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150"
+            onClick={goToPackage}
+          >
             <FaArrowRight className="m-5" />
             <p>Destination</p>
           </div>

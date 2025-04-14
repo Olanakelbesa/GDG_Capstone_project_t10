@@ -5,7 +5,7 @@ const ErrorPage = () => {
     return (
         <div
             className="bg-cover bg-center h-screen flex flex-col relative"
-            style={{ backgroundImage: "url('src/assets/404.jpg')" }}
+            style={{ backgroundImage: "url('/images/404.jpg')" }}
         >
             {/* Link at the top center */}
             <Link
