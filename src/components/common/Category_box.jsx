@@ -7,6 +7,18 @@ function CategoryBox() {
       storysection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const scrollToDestination = () => {
+    const destinationsection = document.getElementById("popular");
+    if (destinationsection) {
+      destinationsection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToTipsAndArticle = () => {
+    const articlesection = document.getElementById("article");
+    if (articlesection) {
+      articlesection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -22,7 +34,7 @@ function CategoryBox() {
           <hr className="opacity-15" />
 
           <div
-            className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150 cursor-pointer">
+            className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150 cursor-pointer" onClick={scrollToTipsAndArticle}>
             <FaArrowRight className="m-5" />
             <p className="m-3">Tips</p>
           </div>
@@ -33,7 +45,7 @@ function CategoryBox() {
             <p>Stories</p>
           </div>
           <hr className="opacity-15" />
-          <div className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150">
+          <div className="flex items-center rounded hover:bg-gray-300 hover:cursor-pointer transform hover:scale-110 transition duration-150" onClick={scrollToDestination}>
             <FaArrowRight className="m-5" />
             <p>Destination</p>
           </div>
