@@ -1,43 +1,47 @@
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const BASE_URL = import.meta.env.VITE_API_URL;
 
-export const getDestinations = async () => {
-  try {
-    const response = await axios.get(`${BASE_URL}/Destinations`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching destinations:', error);
-    return [];
-  }
+const Destinations = () => {
+  const [destinations, setDestinations] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchDestinations = async () => {
+      try {
+        const response = await axios.get(`${BASE_URL}/Destinations`);
+        setDestinations(response.data);
+      } catch (error) {
+        console.error('Error fetching destinations:', error);
+        setDestinations([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDestinations();
+  }, []);
+
+  if (loading) return <p className="text-center">Loading destinations...</p>;
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      {destinations.map((dest) => (
+        <div key={dest.id} className="bg-white rounded-xl shadow-md overflow-hidden">
+          <img
+            src={dest.image || 'https://via.placeholder.com/400x250?text=No+Image'}
+            alt={dest.title}
+            className="w-full h-56 object-cover"
+          />
+          <div className="p-4">
+            <h2 className="text-xl font-semibold">{dest.title}</h2>
+            <p className="text-gray-600 mt-2">{dest.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 };
 
-export const dummyArticles = [
-  {
-    id: 1,
-    image: "https://assets.insuremytrip.com/wp-content/uploads/2020/03/02103508/most_family_friendly_beach_vacation_destinations.jpg",
-    title: "Traveling Tips for Beginners",
-    date: "2025-04-01",
-    tag: "Tips",
-    description:
-      "Get started with essential travel tips that will make your first trip safe and enjoyable.",
-  },
-  {
-    id: 2,
-    image: "https://www.walksworldwide.com/images/general/asia_georgia_caucasus_mountains_hiker_blog.jpg",
-    title: "Exploring Mountain Adventures",
-    date: "2025-03-20",
-    tag: "Adventure",
-    description:
-      "Discover thrilling mountain destinations and tips for safe hiking and climbing experiences.",
-  },
-  {
-    id: 3,
-    image: "", // No image provided
-    title: "Best Beach Destinations in 2025",
-    date: "2025-03-15",
-    tag: "Relax",
-    description:
-      "From Bali to the Bahamas, uncover the top relaxing beach spots for your next getaway.",
-  },
-];
+export default Destinations;
